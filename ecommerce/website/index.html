@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">        <!--logo-->
+            <img src="/img/logo/greenaura.png" alt="Logo" height="145" width="145">
+        </div>
+         <!-- Search bar  -->
+         <div class="search-bar">
+            <input type="text" placeholder="Search for Products ">
+            <span><button type="submit">
+                <img src="/img/search-icon-img/searchicon.png" alt="Search Icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="user-options">    <!--user opt-->
+        <a href="#"><span class="icon"></span> </a>
+        <a href="login.html"><span class="icon">👤</span> Login/Signup </a>
+        <a href="#"><span class="icon"></span></a>
+        <a href="cart.html"><span class="icon">🛒</span> Cart <span class="cart-count">0</span></a>
+        <a href="#"><span class="icon"></span></a>
+        <a href="wishlist.html"><span class="icon">🏪</span> Wishlist <span class="wishlist-count">0</span></a>
+    </div>
+    </header>
+    <main>
+        <ul>
+                <li class="dropdown"> <!--dropdown--><!--Beauty-->
+                    <a href="#">Beauty</a>
+                    <div class="dropdown-content">
+                        <a href="/beautymodule/makeup.html">Makeup</a>
+                        <a href="/beautymodule/skincare.html">Skincare</a>
+                        <a href="/beautymodule/haircare.html">Haircare</a>
+                    </div>
+                </li>
+        
+                <!-- Fashion  -->
+                <li class="dropdown">
+                    <a href="#">Fashion</a>
+                    <div class="dropdown-content">
+                        <a href="/fashionmodule/mens-fashion.html">Men's Fashion</a>
+                        <a href="/fashionmodule/womens-fashion.html">Women's Fashion</a>
+                        <a href="/fashionmodule/accessories.html">Accessories</a>
+                    </div>
+                </li>
+        
+                <!-- Kitchen  -->
+                <li class="dropdown">
+                    <a href="#">Kitchen & Decor</a>
+                    <div class="dropdown-content">
+                        <a href="/kitchenmodule/Furniture.html">Furniture</a>
+                        <a href="/kitchenmodule/cookware.html">Cookware</a>
+                        <a href="/kitchenmodule/Stationary.html">Eco-friendly Stationary</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">      
+                    <a href="#">Toys</a>
+                    <div class="dropdown-content">
+                        <a href="/toymodule/naturaltoys.html">Natural Toys</a>
+                        <a href="/toymodule/organictoys.html">Organic toys</a>
+                        <a href="/toymodule/recyclematerial.html">Recycle material Toys</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">      
+                    <a href="#">Travel Gear</a>
+                    <div class="dropdown-content">
+                        <a href="/travelmodule/reusabletravel.html">Reusable Travel</a>
+                        <a href="/travelmodule/sustainableluggage.html">Sustainable Luggage</a>
+                        <a href="/travelmodule/travelaccessories.html">Travel Accessories</a>
+                    </div>
+                </li>
+        </ul>
+      <div class="slider-container"> <!--slider-->
+        <!-- Slide Images -->
+         
+        <div class="slides fade">
+            <img src="/slider-img/1.png" alt="Image 1" style="width: 100%" style="display: flex">
+        </div>
+        
+        <div class="slides fade">
+            <img src="/slider-img//2.png" alt="Image 2" style="width:100%">
+        </div>
+        
+        <div class="slides fade">
+            <img src="/slider-img/slider1.jpg" alt="Image 3" style="width:100%">
+        </div>
+
+        <div class="slides fade">
+            <img src="/slider-img/slider2.jpg" alt="Image 3" style="width:100%">
+        </div>
+
+        <div class="slides fade">
+            <img src="/slider-img/sliderpic8.jpg" alt="Image 3" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="header-container">
+           <pre><h2>-----------------------  Explore more Categories  -----------------------</h2></div></pre> 
+    <style>     /* css for below 4 modules */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            
+        }
+        .product-section {
+            width: 48%;
+            background-color:#71926b;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px 8px 8px 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+            margin: 10px -350px 10px -350px;
+        }
+        .product-section img {
+            width:100%;
+            height: 90%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            
+        }
+        .product-section:hover {
+         transform: scale(1.05);
+        }
+         .product-section p {
+          font-size: 19px;
+          color: #000000;
+          margin: 10px 0px 10px 0px;
+         }
+    </style>
+</head>
+<div class="container">   <!--code for below 4 modules-->
+    
+    <div class="product-section">
+        <a href="/fashionmodule/womens-fashion.html" ><img src="/img/fashion-module-img/slider3.jpg"></a>
+        <a href = "/fashionmodule/womens-fashion.html"><p>View More</p></a>
+    </div>
+   
+    <div class="product-section">
+        <a href="/kitchenmodule/cookware.html" ><img src="/img/kitchen-module-img/kitchen.jpeg"></a>
+        <a href = "/kitchenmodule/cookware.html"><p>View More</p></a>
+    </div>
+
+    <div class="product-section">            
+        <a href="/toymodule/organictoys.html" ><img src="/img/organic-toys-img-Toys/organic_toys.jpg"></a>
+        <a href = "/toymodule/organictoys.html"><p>View More</p></a>
+    </div>
+
+    <div class="product-section">
+        <a href="/travelmodule/reusabletravel.html" ><img src="/img/reusable-travel-img-Travel/reusable_travel.jpg"></a>
+        <a href = "/travelmodule/reusabletravel.html"><p>View More</p></a>
+    </div>
+</div>
+</body>
+    <script src="/js/slider.js"></script>
+    </main>
+</html>
